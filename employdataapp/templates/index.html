@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home {% endblock title %}
+{% block banner-slider %}
+ <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+<!--      <img src="{% static 'app/images/b1.jpg' %}" class="d-block w-100" alt="banner image">-->
+    </div>
+     </div>
+ </div>
+{% endblock banner-slider %}
+{% block information %}
+<div class="container">
+    <br><br>
+    <div class="row bg-dark text-center p-5 text-white border bottom shadow">
+    <h1>OFFICE EMPLOYEE MANAGEMENT SYSTEM!..</h1>
+        <small class="fs-5">
+   <hr>
+    <a class="btn btn-dark" href="view_all_emp" role="button">View All Employees</a>
+    <a class="btn btn-dark" href="add_emp" role="button">Add an Employee</a>
+    <a class="btn btn-dark" href="filter_emp" role="button">Filter Employee Details</a>
+    <a class="btn btn-dark" href="remove_emp" role="button">Remove Employee</a>
+        </small>
+</div>
+</div>
+
+{% endblock information %}
